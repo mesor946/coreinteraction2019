@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="stylesheet" href="https://use.typekit.net/lmv0wmh.css">
+	<title>mapsketch3version2</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#9f00a7">
+	<meta name="theme-color" content="#ff5af3">
+
+	<style type="text/css">
+
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+
+		height: 200vw;
+		background-image: linear-gradient(#FF8B8B, #FFBA7E, #EEEB94, #CAF0A4, #79DCFF, #BD98FF, #FF4DF2, #FF8B8B );	
+		margin: 0;
+		padding: 0;
+
+		}
+
+		#circle1{
+
+			margin-top: 0.2vw;
+			margin-left: 24vw;
+			width:49vw;
+			height:49vw;
+			border-radius: 49vw;
+			background-color: transparent;
+			border-color: white;
+			border-style: solid;
+			border-width: 2.5vw;
+			position: fixed;
+			background-blend-mode: exclusion;
+			z-index: 10000;
+
+		}
+
+		#circle1:hover {
+
+			margin-top: 0.5vw;
+			margin-left: 24vw;
+			width:49vw;
+			height:49vw;
+			border-radius: 49vw;
+			background-color: transparent;
+			border-color: white;
+			border-style: solid;
+			border-width: 1vw;
+			mix-blend-mode: exclusion;
+
+
+
+		}
+
+		#circle2{
+
+			margin-top: 5vw;
+			margin-left: 28.5vw;
+			width:40vw;
+			height:40vw;
+			border-radius: 40vw;
+			background-color: transparent;
+			border-color: white;
+			border-style: solid;
+			border-width: 2.5vw;
+			position: fixed;
+						z-index: 10000;
+
+		}
+
+		#circle2:hover {
+
+			margin-top: 5vw;
+			margin-left: 28.5vw;
+			width:40vw;
+			height:40vw;
+			border-radius: 40vw;
+			background-color: transparent;
+			border-color: white;
+			border-style: solid;
+			border-width: 1vw;
+			mix-blend-mode: exclusion;
+
+
+
+		}
+
+		#circle3{
+
+			margin-top: 10vw;
+			margin-left: 33.5vw;
+			width:30vw;
+			height:30vw;
+			border-radius: 30vw;
+			background-color: transparent;
+			border-color: white;
+			border-style: solid;
+			border-width: 2.5vw;
+			position: fixed;
+						z-index: 10000;
+
+		}
+
+		#circle3:hover {
+
+			margin-top: 10vw;
+			margin-left: 33.5vw;
+			width:30vw;
+			height:30vw;
+			border-radius: 30vw;
+			background-color: transparent;
+			border-color: white;
+			border-style: solid;
+			border-width: 1vw;
+			mix-blend-mode: exclusion;
+
+
+
+		}
+
+		#circle4{
+
+			margin-top: 15vw;
+			margin-left: 38.5vw;
+			width:20vw;
+			height:20vw;
+			border-radius: 20vw;
+			background-color: transparent;
+			border-color: white;
+			border-style: solid;
+			border-width: 2.5vw;
+			z-index: 10000;
+			position: fixed;
+
+		}
+
+		#circle4:hover{
+
+			margin-top: 15vw;
+			margin-left: 38.5vw;
+			width:20vw;
+			height:20vw;
+			border-radius: 20vw;
+			background-color: transparent;
+			border-color: white;
+			border-style: solid;
+			border-width: 1vw;
+			position: fixed;
+			mix-blend-mode: exclusion;
+
+
+		}
+
+		#circle5{
+
+			margin-top: 20vw;
+			margin-left: 43.5vw;
+			width:10vw;
+			height:10vw;
+			border-radius: 10vw;
+			background-color: transparent;
+			border-color: white;
+			border-style: solid;
+			border-width: 2.5vw;
+			position: fixed;
+						z-index: 10000;
+
+		}
+
+		#circle5:hover{
+
+			margin-top: 20vw;
+			margin-left: 43.5vw;
+			width:10vw;
+			height:10vw;
+			border-radius: 10vw;
+			background-color: transparent;
+			border-color: white;
+			border-style: solid;
+			border-width: 1vw;
+			position: fixed;
+			z-index: 10000;
+			mix-blend-mode: exclusion;
+
+
+		}
+
+		a{
+
+		margin-top: 24.6vw;
+		margin-left: 93.8vw;
+		width:2.7vw;
+		height:2.7vw;
+		border-radius: 2.7vw;
+		background-color: white;
+		position: fixed;
+		text-decoration: none;
+		 	
+		}
+
+		p {
+		display: inline-block;
+		top: 50vw;
+		bottom: 0;
+		margin: -5vw 5vw 10vw 5vw;
+		font-family: cooper-black-std, serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 72px;
+		line-height: 80px;
+		color: white;
+		text-align: left;
+		z-index: 1;
+		position:relative;
+
+		}
+
+		h1{
+
+		display: inline-block;
+		top: 50vw;
+		bottom: 0;
+		margin: 10vw 5vw 10vw 5vw;
+		font-family: cooper-black-std, serif;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 100px;
+		line-height: 100px;
+		color: white;
+		text-align: left;
+		z-index: 1;
+		position:relative;
+		mix-blend-mode: exclusion;
+
+		}
+
+		
+
+
+		img {
+
+
+			margin-top: 0.2vw;
+			
+			margin-bottom: 5vw;
+			padding: 5px 5px 5px 5px;
+			display: block;
+			margin-left: auto;
+  			margin-right: auto;
+  			height: 30%;
+
+
+		}
+
+		#cup {
+
+				margin-top: 0.2vw;
+			
+			margin-bottom: 5vw;
+			padding: 5px 5px 5px 5px;
+			display: block;
+			margin-left: auto;
+  			margin-right: auto;
+  			width: 20%;
+
+
+		}
+
+		#bridge {
+
+			margin-top: 0.2vw;
+			
+			margin-bottom: 5vw;
+			padding: 5px 5px 5px 5px;
+			display: block;
+			margin-left: auto;
+  			margin-right: auto;
+  			width: 50%;
+
+		}
+
+		#crif {
+
+			margin-top: 0.5vw;
+			
+			margin-bottom: 5vw;
+			padding: 5px 5px 5px 5px;
+			display: block;
+			margin-left: auto;
+  			margin-right: auto;
+  			width: 30%;
+  			height: auto;
+
+		}
+
+
+		
+
+	
+
+
+
+
+	</style>
+
+
+</head>
+
+<body>
+	<a name="top"></a>
+
+
+
+
+	<a href="#part1" id= "circle1"></a>
+	<a href="#part2" id= "circle2"></a>
+	<a href="#part3" id= "circle3"></a>
+	<a href="#part4" id= "circle4"></a>
+	<a href="#part5" id= "circle5"></a>
+
+
+
+	<a href="index.html"></a>
+
+
+		<span id="part1">
+
+
+
+			
+			<h1>Museum of Natural History, Central Park West & 79th St</h1>
+			<p>The sky was a pale cool white, and it was drizzling faintly. The first time I stepped into the hallowed halls of the museum, grasping my mothers hand tightly in my tinier one, I felt that I had stepped into another time. In the hall of African Mammals, my five year old self gaped at the herd of elephants, mid stride. My mother and I wound our way through dusty corridors, and I had completely forgotten about the soft rain drizzling outside, instead transported to Africa.I ran from glass covered diorama to diorama, expecting at any moment for the inhabitants within to stand up and continue going about their day. I wound up the stairs of the Hayden Planetarium, my mother trailing not far behind. Sitting inside the theater, washed in indigo light, I looked up at the projected stars and imagined myself among them. Inevitably my mother and I made our way through the museum gift shop, and as small children are wont to do, I gravitated towards all manner of fuzzy soft stuffed animals. I saw a small gray elephant, the smallest fuzzy calf left behind, and I plucked her off the shelf, and she became my best friend and closest confidant for 12 and a half years.<br><br><img src="elephant.png" ><br></p>
+
+			
+			
+		</span>
+
+
+
+		<span id="part2"> 
+
+			<h1>125th Street Subway Station, West 125th Street & Broadway</h1>
+			<p>Before my mother would make the decision to switch from getting off at grand central and the once again switching to Marble Hill, we would get onto the train at 125 street. One of my first memories ever traveling into the city involved getting off of the Metro North train and walking to the Subway.  The first thing that struck me was the large bridge that the train would rumble over. It looked like an iron colored rainbow. Stars and lions adorned it. I remember looking up at the bridge, the sky pink and orange and baby blue behind it, the warm, late spring-early summer air hitting my face and covering my body. As we walked up the stairs, I distinctly remember being irritated by the fact that-as a kinder- gartener, my head was right at butt level for most adults.<br><br><img src="bridge.png" id="bridge" ><br>
+		 </p>
+
+
+		</span>
+
+
+
+
+		<span id="part3">
+
+			<h1>McDonald's, 39 Union Square West</h1>
+			<p> I have vague memories of this McDonalds', which is in Union Square. Instead, I recall the warm fuzzy feelings that came before arriving there, and the terrible hangover that hit me after leaving. I arrived at this McDonald's sometime after 2 AM on a chilly November night. <br>After spending time in some glitzy club on the west side, where my friend knew a promoter who got us in for free, I subsequently downed five or six free vodka cranberry cocktails (and a few glasses of champagne).<br> This was the first time I went dancing after coming to college, and I felt very glamorous and adult. I would not feel so glamorous when, after walking over a mile arm and arm with my friend, drunkenly proclaiming how much I loved her and what a good friend she was, I would arrive at this McDonald's, and subsequently throw up -quietly- into my friends water cup while she ate her 10 piece chicken nugget meal. After I was done expelling the contents of my stomach into the paper cup, I lifted my head, looked straight into my friends eyes, and proudly proclaimed "<em>that was neat!</em>".<br><br><img src="cup.png" id ="cup"><br></p>
+
+		 </span>
+
+
+		<span id="part4">
+
+			<h1>Sidewalk, near the corner of 13th Street and 3rd Avenue</h1>
+			<p> It was the second semester of my freshman year of college, and I was walking back to my dorm with my classmates. While we were walking, I found a fresh patch of sidewalk, recently poured, nearly untouched. It was near the corner of 13th street and 3rd Avenue, on the side with the graffiti of the dinosaur, and when I scratched my signature into the fresh concrete (with my house-keys to my parent's home), I would fulfill a small dream of mine, and in doing so, claimed that spot of New York as my own. <br> Later on I would bring a boy there and kiss him, but that's another story.<br><br><img src="corner.png" id ="corner"><br></p> 
+		</span>
+
+
+		<span id="part5">
+
+			<h1>Crif Dogs, 113 St Marks Place</h1>
+			<p> Crif Dogs on St. Marks Place is one of my favorite haunts. I found it early on when I first started living in the city, and I try to bring my friends there as often as I can. I remember when I first discovered it, I felt like <em>Indiana Jones</em>, stumbling on a hidden treasure. Even though I am sure many people know about it, and there is a speakeasy attached, I was so struck by the fantastical nature of the place the first time I found it. The tables are arcade games that you can play, and the only thing they serve is hotdogs (my favorite junk food). Since that first time walking down the stairs from the street, I have returned many a time. Whenever I go inside it reminds me how amazing my city is, and how I must continue to explore it. <br><br><img src="crif.png" id ="crif"><br></p>
+
+		</span>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</body>
+</html>
