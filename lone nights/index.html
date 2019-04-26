@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lone Nights</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://use.typekit.net/lmv0wmh.css">
+	<script type="text/javascript" src="index.js"></script>
+</head>
+
+<style type="text/css">
+
+	body{
+
+		margin: 0;
+		padding: 0;
+		background-color: #0000CD;
+
+	}
+
+	div{
+
+		 animation-name: spin;
+		  animation-duration: 5000ms;
+		  animation-iteration-count: infinite;
+		  animation-timing-function: linear; 
+		  animation-duration: 30s;
+		  /* transform: rotate(3deg); */
+		   /* transform: rotate(0.3rad);/ */
+		   /* transform: rotate(3grad); */ 
+		   /* transform: rotate(.03turn);  */
+	
+	}
+
+
+	@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+	}
+
+	p {
+
+		margin: 10vw;
+		margin-left: 0vw;
+		padding: 0;
+		text-align: center;
+		font-family: cooper-black-std, serif;
+		font-weight: 400;
+		font-style: italic;
+		font-size:300px;
+		letter-spacing: -100px;
+		color:	#0000FF	;
+		-webkit-text-stroke-width: 5px;
+		-webkit-text-stroke-color: white;
+  		-webkit-animation: glow 1s ease-in-out infinite alternate;
+  		-moz-animation: glow 1s ease-in-out infinite alternate;
+ 		animation: glow 1s ease-in-out infinite alternate;
+	
+	}
+
+	@-webkit-keyframes glow {
+  	from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+ 	 }
+  	to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+	
+	
+</style>
+
+
+<body>
+
+<div>
+	<p id="text"> LONE NIGHTS </p>
+
+</div>
+
+
+</body>
+</html>
