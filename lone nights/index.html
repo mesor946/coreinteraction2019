@@ -29,33 +29,42 @@
 		font-weight: 400;
 		font-style: italic;
 		font-size:300px;
-		letter-spacing: -100px;
-		color:	#0000FF	;
-		-webkit-text-stroke-width: 5px;
+		letter-spacing:-100px;
+		color:	transparent;	;
+		-webkit-text-stroke-width: 10px;
 		-webkit-text-stroke-color: white;
-  		-webkit-animation: glow 1s ease-in-out infinite alternate;
-  		-moz-animation: glow 1s ease-in-out infinite alternate;
- 		animation: glow 1s ease-in-out infinite alternate;
+  		
+		animation-name: roll;
+	   animation-duration: 15s;
+	  animation-timing-function: linear;
+	  animation-iteration-count: infinite;
+	  animation-direction: normal;
+	  animation-play-state: running; 
 	
 	}
 
-	@-webkit-keyframes glow {
-  	from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
- 	 }
-  	to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-  }
+
+
+
+
+@keyframes roll {
+/* Basic move left and right*/
+  0% {transform: translateX(100%); }
+ 
+  100% {transform: translateX(-100%);}
+  
 }
-	
+
+	}
 	
 </style>
 
 
 <body>
 
+ <div id="parent">
 	<p id="text"> LONE NIGHTS </p>
-
+</div>
 
 </body>
 </html>
