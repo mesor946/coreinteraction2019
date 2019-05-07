@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>labexercise5</title>
+	<style> @media print {#ghostery-purple-box {display:none !important}}</style>
+
+</head>
+<body>
+
+
+
+<pre style="word-wrap: break-word; white-space: pre-wrap;">
+
+
+//attaches an event listener to the "window" object that is triggered when the page loads
+window.addEventListener('load', function(e) {
+//a variable stores data, in this case "applegrid". getElementById() method returns the element (applegrid) that has the ID attribute with the specified value.
+	var appleGrid = document.getElementById('apple-grid');
+//a variable stores data, in this case "applelist". getElementById() method returns the element (applelist) that has the ID attribute with the specified value.
+	var appleList = document.getElementById('apple-list');
+//a variable stores data, in this case "applethumbs". getElementById() method returns the element (apple-thumbs) that has the ID attribute with the specified value.
+	var appleThumbs = document.getElementById('apple-thumbs');
+//a variable stores data, in this case "apple". .querySelectorAll returns all elements in the document that matches a specified CSS selector
+	var gridApples = document.querySelectorAll('.apple');
+
+
+//forEach is a  method that is used to execute a function on each element in an array(so a function is triggered on each apple that is clicked)
+	gridApples.forEach((gridApple, i) => {
+//attaches an event listener to the "window" object that is triggered when an apple is clicked
+		gridApple.addEventListener('click', pickApple);
+	});
+
+//a function executes task on variables, in this case, apple and apple name. The target event property returns the element that triggered the event.
+	function pickApple(e) {
+		var apple = e.target;
+// toString is a method used to create String representation of an object. 
+		var appleName = apple.dataset.apple.toString();
+// createElement() creates an Element Node with the specified name. In this case a list
+		var appleListItem = document.createElement('li');
+//The querySelector() returns the first element that matches a specified CSS selector(s) in the document, in this case, the "ol"
+		var ol = appleList.querySelector('ol');
+//method adds a node to the end of the list of children of a specified parent node, so in this case it adds an apple list element
+		ol.appendChild(appleListItem);
+		appleListItem.innerText = appleName;
+//clones the node, in this case the applethumb
+		var appleThumb = apple.cloneNode(true);
+//method adds a node to the end of the list of children of a specified parent node, so in this case it adds an apple thumbs element
+
+		appleThumbs.appendChild(appleThumb);
+
+	}
+
+});
+</pre>
+
+</body>
+</html>
+
+
+
+
+
