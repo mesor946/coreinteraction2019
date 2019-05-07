@@ -15,33 +15,73 @@
 
 		margin: 0;
 		padding: 0;
-		background-color: #0000CD;
+		background-color:black;
+		overflow: hidden;
 
 	}
 
-	p {
+	#parent{
 
-		margin: 20vw;
+		margin-top: 5vw;
+	}
+
+
+
+	.lone {
+
+		margin: 0vw;
+		margin-left: 0vw;
+		padding: 20;
+		text-align: center;
+		font-family: cooper-black-std, serif;
+		font-weight: 400;
+		font-style: italic;
+		font-size:120px;
+		letter-spacing:-30px;
+		line-height: 120px;
+		color:	transparent;	;
+		-webkit-text-stroke-width: 5px;
+		-webkit-text-stroke-color: white;
+  		
+		animation-name: roll;
+	   animation-duration: 10s;
+	  animation-timing-function: linear;
+	  animation-iteration-count: infinite;
+	  animation-direction: normal;
+	  animation-play-state: running; 
+
+	  transition: 1s;
+	
+	}
+
+	.nights{
+
+		margin: 0vw;
 		margin-left: 0vw;
 		padding: 0;
 		text-align: center;
 		font-family: cooper-black-std, serif;
 		font-weight: 400;
 		font-style: italic;
-		font-size:300px;
-		letter-spacing:-100px;
-		line-height: -10px;
+		font-size:120px;
+		letter-spacing:-30px;
+		line-height: 120px;
 		color:	transparent;	;
-		-webkit-text-stroke-width: 10px;
+		-webkit-text-stroke-width: 5px;
 		-webkit-text-stroke-color: white;
-  		
+
+	
 		animation-name: roll;
-	   animation-duration: 7s;
+	   animation-duration: 10s;
 	  animation-timing-function: linear;
 	  animation-iteration-count: infinite;
-	  animation-direction: normal;
+	  animation-direction: reverse;
 	  animation-play-state: running; 
-	
+
+	  transition: 1s;
+
+
+
 	}
 
 
@@ -57,14 +97,27 @@
 }
 
 	}
+
+
 	
 </style>
 
 
 <body>
 
- <div id="parent">
-	<p id="text"> LONE NIGHTS </p>
+	<div id="parent">
+
+	<p class="lone"> LONE</p><br> 
+
+	<p class="nights">NIGHTS </p><br>
+
+	<p class="lone" id="lone2"> LONE</p><br> 
+
+	<p class="nights" id="nights2">NIGHTS </p>
+
+	<p class="lone"> LONE</p><br> 
+
+	<p class="nights">NIGHTS </p><br>
 </div>
 
 </body>
