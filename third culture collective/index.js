@@ -1,10 +1,33 @@
 $(document).ready(function() {
+
+	var container = document.querySelector("#waveform")
+
+	var url = container.dataset.url;
+
+			console.log(url)
+
+
+
+
 	var wavesurfer = WaveSurfer.create({
 	    container: '#waveform',
-	    waveColor: 'violet',
-	    progressColor: 'purple'
+	    waveColor: 'black',
+	    progressColor: '#FF9200'
 	});
-	wavesurfer.load('https://github.com/mesor946/coreinteraction2019/raw/master/episode1.mp3');
+	wavesurfer.load(url);
 
-	console.log(wavesurfer)
+	//wavesurfer.on('ready', function () {
+    	//wavesurfer.play();
+	//});
+
+
+	document.getElementById("play").addEventListener("click",function () {
+    	wavesurfer.play();
+    })
+
+    document.getElementById("pause").addEventListener("click",function () {
+    	wavesurfer.pause();
+    })
+
+
 });
