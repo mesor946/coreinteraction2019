@@ -97,83 +97,90 @@ p {
 	margin: 0px 10px 0px 10px;
 }
 
-@media only screen and (min-device-width : 480px) and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
+@media all and (max-width: 991px) { 
 
-  p{
-  	color:orange;
-  }
-
-  div{
-  	background-color: white;
-  }
-
-  h1{
-  
-  	font-size: 24px;
-
-  }
-
-  a:hover {
-    color:green;
+p{
+	color:green;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-
- body {
-    background-color: pink;
-  }
-
-  p{
-  	color:red;
-  }
-
-  div{
-  	background-color: transparent;
-  }
-
-  h1{
-  
-  	font-size: 32px;
-  	font-family: Arial, Helvetica, sans-serif;
-
-  }
-
-  a:hover {
-    color:pink;
+a:hover{
+	color: blue;
 }
+
+#logo {
+
+	color: orange;
+	font-family: Helvetica, sans-serif;
+}
+
+div{
+	background-color: red;
+}
+
+h1{
+
+	color: green;
+	font-family: Times New Roman,serif;
+
 }
 
 
-@media only screen  and (min-width : 1224px) {
+	 }
+@media all and (max-width: 768px) { 
 
 
- body {
-    background-color: yellow;
-  }
-
-  p{
-  	color:orange;
-  }
-
-  div{
-  	background-color: red;
-  }
-
-  h1{
-  
-  	font-size: 40px;
-  	font-family: Arial, Helvetica, sans-serif;
-
-  }
-
-  a:hover {
-    color:orchid;
+p{
+	color:blue;
 }
 
+a:hover{
+	color: orchid;
 }
 
-/* Styles */
+#logo {
 
+	color: red;
+	font-family: Helvetica, sans-serif;
+}
+
+div{
+	background-color: pink;
+}
+
+h1{
+
+	color: orange;
+	font-family: Arial,serif;
+
+}
+
+
+
+}
+@media all and (max-width: 480px) { 
+
+	p{
+	color:yellow;
+}
+
+a:hover{
+	color: yellow;
+}
+
+#logo {
+
+	color: yellow;
+	font-family: Helvetica, sans-serif;
+}
+
+div{
+	background-color: yellow;
+}
+
+h1{
+
+	color: yellow;
+	font-family: Times New Roman,serif;
+
+}
+}
